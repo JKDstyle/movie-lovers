@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Poster</title>
+</head>
+<body>
+
+	<div>
+		<% @movie_poster.each do |url| %>
+			<img src="<%= url %>" height="175">
+			<input type='submit' name='submit' value = "GO">
+		<% end %>
+	</div>
+</body>
+</html>
